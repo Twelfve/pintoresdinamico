@@ -10,6 +10,11 @@ app.set('view engine', 'hbs');
 
 app.use(express.static(__dirname + '/public'));
 
+//Configurar rutas
+app.get('/', (req, res)=>{
+    res.render('index');
+})
+
 //Arrancamos el servidor web
 app.listen(3000, ()=>{
     console.log('Escuchando el puerto 3000')

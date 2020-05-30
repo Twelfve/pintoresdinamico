@@ -8,11 +8,19 @@ const app = express();
 //Definimos el motor de plantillas
 app.set('view engine', 'hbs');
 
+//Vamos a generar los partials
+hbs.registerPartials(__dirname + '/views/partials');
+
+//Generamos el sitio estatico
 app.use(express.static(__dirname + '/public'));
 
 //Configurar rutas
 app.get('/', (req, res)=>{
     res.render('index');
+})
+
+app.get('/dali', (req, res)=>{
+    res.render('dali');
 })
 
 //Arrancamos el servidor web

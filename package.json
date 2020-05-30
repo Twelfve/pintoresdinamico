@@ -1,0 +1,24 @@
+{
+  "name": "pintoresdinamico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VICDACHM1212/pintoresdinamico.git"
+  },
+  "author": "Victor Daniel Chavez Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VICDACHM1212/pintoresdinamico/issues"
+  },
+  "homepage": "https://github.com/VICDACHM1212/pintoresdinamico#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.3",
+    "hbs": "^4.1.1"
+  }
+}

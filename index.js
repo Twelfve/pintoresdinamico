@@ -16,11 +16,43 @@ app.use(express.static(__dirname + '/public'));
 
 //Configurar rutas
 app.get('/', (req, res)=>{
-    res.render('index');
+    res.render('index', {
+        author : 'Victor Daniel Chavez Medina',
+        year : new Date().getFullYear(),
+        title : 'Pintores'
+    });
 })
 
 app.get('/dali', (req, res)=>{
-    res.render('dali');
+    res.render('dali', {
+        author : 'Victor Daniel Chavez Medina',
+        year : new Date().getFullYear(),
+        title : 'Salvador Dali'
+    });
+})
+
+app.get('/davinci', (req, res)=>{
+    res.render('davinci', {
+        author : 'Victor Daniel Chavez Medina',
+        year : new Date().getFullYear(),
+        title : 'Leonardo Da Vinci'
+    });
+})
+
+app.get('/picasso', (req, res)=>{
+    res.render('picasso', {
+        author : 'Victor Daniel Chavez Medina',
+        year : new Date().getFullYear(),
+        title : 'Pablo Picasso'
+    });
+})
+
+app.get('/vincent', (req, res)=>{
+    res.render('vincent', {
+        author : 'Victor Daniel Chavez Medina',
+        year : new Date().getFullYear(),
+        title : 'Vincent Van Gogh'
+    });
 })
 
 //Arrancamos el servidor web
